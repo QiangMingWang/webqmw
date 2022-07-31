@@ -1,7 +1,7 @@
 /*
  * @Founder: Mr.Qiang
  * @Date: 2022-07-31 11:28:58
- * @LastEditTime: 2022-07-31 11:41:25
+ * @LastEditTime: 2022-07-31 11:57:51
  * @Description: No description yet
  */
 import { createRouter, createWebHashHistory } from 'vue-router'

@@ -1,56 +1,23 @@
 <!--
  * @Founder: Mr.Qiang
  * @Date: 2022-07-31 07:54:35
- * @LastEditTime: 2022-07-31 11:35:32
+ * @LastEditTime: 2022-07-31 14:39:25
  * @Description: No description yet
 -->
 <script setup>
-import { ArrowDown } from '@element-plus/icons-vue'
+// import { ArrowDown } from '@element-plus/icons-vue'
+// console.log(ArrowDown)
 </script>
 
 <template>
   <el-container direction="vertical" class="container">
-    <el-header class="header">
-      <div class="flex flex-wrap items-center myheader-btn">
-        <el-dropdown trigger="click">
-          <el-button type="primary">
-            CSS<el-icon class="el-icon--right"><arrow-down /></el-icon>
-          </el-button>
-          <template #dropdown>
-            <el-dropdown-menu>
-              <el-dropdown-item>Action 1</el-dropdown-item>
-              <el-dropdown-item>Action 2</el-dropdown-item>
-              <el-dropdown-item>Action 3</el-dropdown-item>
-              <el-dropdown-item>Action 4</el-dropdown-item>
-              <el-dropdown-item>Action 5</el-dropdown-item>
-            </el-dropdown-menu>
-          </template>
-        </el-dropdown>
-      </div>
-      QiangMingWang
-      <div class="flex flex-wrap items-center myheader-btn">
-        <el-dropdown trigger="click">
-          <el-button type="primary">
-            JS<el-icon class="el-icon--right"><arrow-down /></el-icon>
-          </el-button>
-          <template #dropdown>
-            <el-dropdown-menu>
-              <el-dropdown-item>Action 1</el-dropdown-item>
-              <el-dropdown-item>Action 2</el-dropdown-item>
-              <el-dropdown-item>Action 3</el-dropdown-item>
-              <el-dropdown-item>Action 4</el-dropdown-item>
-              <el-dropdown-item>Action 5</el-dropdown-item>
-            </el-dropdown-menu>
-          </template>
-        </el-dropdown>
-      </div>
-    </el-header>
+    <Header></Header>
     <el-container class="main">
       <!-- <el-container> -->
       <el-main>Main</el-main>
       <!-- </el-container> -->
     </el-container>
-    <el-footer>Footer</el-footer>
+    <Footer></Footer>
   </el-container>
 </template>
 
@@ -67,13 +34,6 @@ import { ArrowDown } from '@element-plus/icons-vue'
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.el-aside {
-  background-color: #d3dce6;
-  color: #333;
-  text-align: center;
-  min-height: 100%;
 }
 
 .el-main {
